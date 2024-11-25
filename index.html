@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNX AVA - Memecoin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        /* Full Height and Orange Gradient Background */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: linear-gradient(135deg, #ff9800, #f44336); /* Orange gradient */
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Center Container */
+        .container {
+            text-align: center;
+        }
+
+        /* Rotating Circular Image */
+        .rotating-image {
+            margin: 2rem auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden; /* Ensure the image is clipped to the circle */
+            animation: spin 4s linear infinite;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .rotating-image img {
+            width: 100%; /* Make image fill the container */
+            height: 100%; /* Stretch image to cover */
+            object-fit: cover; /* Ensure the image scales properly within the circle */
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Buttons */
+        .cta-button, .whitepaper-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #1e88e5;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 25px;
+            margin: 0.5rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .cta-button:hover, .whitepaper-button:hover {
+            background: #1565c0;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            font-size: 0.9rem;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Welcome to CNX AVA Memecoin 🚀</h1>
+        <p>The ultimate memecoin for the next-generation crypto enthusiasts!</p>
+        <div class="rotating-image">
+            <img src="public/weed_1.jpg" alt="CNX AVA Logo">
+        </div> <!-- Rotating image -->
+        <a href="https://linktr.ee/cnxava" target="_blank" class="cta-button">Visit Our Linktree 🌐</a>
+        <a href="whitepaper.pdf" target="_blank" class="whitepaper-button">Read Our White Paper 📄</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 CNX AVA. All rights reserved.</p>
+    </footer>
+</body>
+</html>
